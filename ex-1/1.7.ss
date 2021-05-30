@@ -1,0 +1,6 @@
+(define (square x) (* x x))
+(define (abs x) 
+  (cond ((> x 0) x)
+    (else (- x))))
+(define (goodEnought? befGuess guess)
+  (< (abs (- (square guess) befGuess)) 0.001))

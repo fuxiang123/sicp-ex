@@ -1,0 +1,7 @@
+(define (max a b c)
+  (cond ((and (< a b) (< a c)) (+ b c))
+    ((and (< b a) (< b c)) (+ a c))
+    (else (+ a b))))
+(display (max 5 2 8)) (newline) ; 13
+(display (max 1 2 5)) (newline) ; 7
+(display (max 5 9 3)) ; 14
