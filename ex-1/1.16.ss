@@ -1,5 +1,6 @@
 #lang sicp
-(define (fast-expt b n) (expt b n 1))
+(define (fast-expt b n)
+  (expt b n 1))
 (define (even? n) ; 检测是否为偶数
   (= (remainder n 2) 0))
 (define (expt b n a)
